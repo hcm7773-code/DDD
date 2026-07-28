@@ -1,0 +1,6 @@
+{
+  "name": "個人網頁與作品集 | Personal Portfolio",
+  "description": "具備個人簡介、作品集展示、經歷時間軸、專業技能、編輯模式與 AI 履歷問答助手的個人網站",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
