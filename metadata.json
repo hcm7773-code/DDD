@@ -1,6 +1,6 @@
 {
-  "name": "個人網頁與作品集 | Personal Portfolio",
-  "description": "具備個人簡介、作品集展示、經歷時間軸、專業技能、編輯模式與 AI 履歷問答助手的個人網站",
+  "name": "跨領域 AI 與教育科技學術履歷 | Cross-Disciplinary Academic Portfolio",
+  "description": "融合人類學、數理教育、資訊科技與 AI 代理人的跨領域專業履歷與教育科技作品集 (GAEC, VELS, Educational AI Agents)",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

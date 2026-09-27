@@ -1,13 +1,455 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跨領域 AI 與教育科技學術履歷 | Personal Profile</title>
+  <meta name="description" content="跨領域個人學術與專業履歷：融合人類學、數理教育、資訊科技與 AI 代理人應用">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="top-bar">
+        <!-- Zone 1: Brand -->
+        <a href="./index.html" class="brand-mark" aria-label="返回首頁">
+          <div class="brand-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">C.M. HOU 侯敬群</span>
+            <span class="brand-sub">AI & EdTech Portfolio</span>
+          </div>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="nav-links" aria-label="主要導覽">
+          <a href="./index.html" class="nav-link active">Home</a>
+          <a href="./experience.html" class="nav-link">Experience</a>
+          <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          <a href="./gaec.html" class="nav-link">GAEC</a>
+          <a href="./vels.html" class="nav-link">VELS</a>
+          <a href="./agents.html" class="nav-link">AI Agents</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Actions -->
+        <div class="header-actions">
+          <a href="./portfolio.html" class="btn-primary">
+            <span>瀏覽作品集</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <button class="mobile-toggle" aria-label="切換選單" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true">
+    <a href="./index.html" class="mobile-nav-link active">Home 首頁</a>
+    <a href="./experience.html" class="mobile-nav-link">Experience 經歷與學歷</a>
+    <a href="./portfolio.html" class="mobile-nav-link">Portfolio 技能與專案</a>
+    <a href="./gaec.html" class="mobile-nav-link">GAEC 英語檢定系統</a>
+    <a href="./vels.html" class="mobile-nav-link">VELS 品格學習系統</a>
+    <a href="./agents.html" class="mobile-nav-link">AI Agents 多代理人生態</a>
+    <a href="#contact" class="mobile-nav-link">Contact 聯絡交流</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="hero-kicker-dot"></span>
+            <span>Modern Professional · AI Technology · Academic Portfolio</span>
+          </div>
+          <h1 class="hero-title">
+            以人文視角透析認知架構，以 <span class="hero-title-highlight">AI 科技</span> 賦能教育創新
+          </h1>
+          <p class="hero-subtitle">
+            深耕跨學科學術底蘊與工程實踐，將人類學田野觀察之細膩度、數理教育之思維邏輯，轉化為前瞻教育科技架構與生成式 AI 多代理人生態系統。
+          </p>
+
+          <!-- Cross-Disciplinary Trajectory Stepper -->
+          <div class="trajectory-card">
+            <div class="trajectory-header">
+              <div class="trajectory-header-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+                跨領域學術與實踐路徑 (Cross-Disciplinary Evolution)
+              </div>
+              <span class="card-meta-quiet">5-Stage Academic Trajectory</span>
+            </div>
+            
+            <div class="trajectory-flow">
+              <div class="trajectory-node">
+                <div class="trajectory-step-number">STAGE 01</div>
+                <div class="trajectory-node-title">人類學 Anthropology</div>
+                <div class="trajectory-node-desc">文化脈絡、田野調查、深度質性洞察與認知模式</div>
+              </div>
+              <div class="trajectory-arrow">→</div>
+
+              <div class="trajectory-node">
+                <div class="trajectory-step-number">STAGE 02</div>
+                <div class="trajectory-node-title">數理教育 Math & Science</div>
+                <div class="trajectory-node-desc">概念轉變、科學推理、建構主義教學設計與認知鷹架</div>
+              </div>
+              <div class="trajectory-arrow">→</div>
+
+              <div class="trajectory-node">
+                <div class="trajectory-step-number">STAGE 03</div>
+                <div class="trajectory-node-title">資訊科技 Info Technology</div>
+                <div class="trajectory-node-desc">軟體工程、全棧架構、演算法思維與資料結構整合</div>
+              </div>
+              <div class="trajectory-arrow">→</div>
+
+              <div class="trajectory-node">
+                <div class="trajectory-step-number">STAGE 04</div>
+                <div class="trajectory-node-title">AI 應用 AI Applications</div>
+                <div class="trajectory-node-desc">大型語言模型微調、多模態評測、提示工程與 Agent</div>
+              </div>
+              <div class="trajectory-arrow">→</div>
+
+              <div class="trajectory-node active-focus">
+                <div class="trajectory-step-number">STAGE 05</div>
+                <div class="trajectory-node-title">教育科技 EdTech</div>
+                <div class="trajectory-node-desc">智慧導學系統、素養評量、適應性學習與多元代理人協同</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Major Cards Section (Personal Profile) -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">個人核心輪廓 (Personal Profile)</h2>
+            <p class="section-desc">三大核心構面：融合質性人文觀察、嚴謹數理教育訓練與深厚產業實務經歷。</p>
+          </div>
+          <a href="./experience.html" class="btn-secondary">查看詳細經歷與修課 →</a>
+        </div>
+
+        <div class="cards-triad-grid">
+          <!-- Card 1: About Me -->
+          <div class="glass-card">
+            <div class="card-icon-header">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="card-meta-quiet">CARD 01 · PROFILE</span>
+            </div>
+            <h3 class="card-title">關於我 (About Me)</h3>
+            <p class="card-body">
+              具備獨特的跨領域視野，從探索人類行為文化模式的人類學出發，跨足數理與科學教育的認知結構探究，並深入資訊工程與人工智慧尖端技術。專注於打造兼具<strong>學理依據、溫度同理與技術前瞻</strong>的教育科技解決方案，致力於讓 AI 成為啟發人類深層思辨與品格成長的催化劑。
+            </p>
+            <div class="card-footer">
+              <span class="card-meta-quiet">Human-Centered AI · EdTech</span>
+              <a href="./experience.html#about" class="card-link">深入瞭解 <span>→</span></a>
+            </div>
+          </div>
+
+          <!-- Card 2: Education -->
+          <div class="glass-card">
+            <div class="card-icon-header">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <span class="card-meta-quiet">CARD 02 · ACADEMIC</span>
+            </div>
+            <h3 class="card-title">學歷背景 (Education)</h3>
+            <div class="card-body">
+              <ul class="list-structured">
+                <li class="list-item-clean">
+                  <span class="list-item-title">人類學系學士 / 研究所訓練</span>
+                  <span class="list-item-meta">質性田野分析 · 文化人類學 · 社會認知</span>
+                  <span class="list-item-desc">深入探討不同社群的知識傳遞機制與意義建構體系。</span>
+                </li>
+                <li class="list-item-clean">
+                  <span class="list-item-title">數理教育暨科學傳播研習</span>
+                  <span class="list-item-meta">STEM 認知發展 · 建構主義 · 迷思概念診斷</span>
+                  <span class="list-item-desc">專研學習者在抽象數理與自然科學概念的轉變心理學。</span>
+                </li>
+                <li class="list-item-clean">
+                  <span class="list-item-title">資訊科技與教育科技專精</span>
+                  <span class="list-item-meta">軟體系統設計 · 智慧學習環境 · AI 模型整合</span>
+                  <span class="list-item-desc">將教育理論落實為高擴展性的數位產品與學習平台。</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="card-meta-quiet">Rigorous Interdisciplinary Training</span>
+              <a href="./experience.html#education" class="card-link">完整修課與學歷 <span>→</span></a>
+            </div>
+          </div>
+
+          <!-- Card 3: Career -->
+          <div class="glass-card">
+            <div class="card-icon-header">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <span class="card-meta-quiet">CARD 03 · CAREER</span>
+            </div>
+            <h3 class="card-title">專業經歷 (Career)</h3>
+            <div class="card-body">
+              <ul class="list-structured">
+                <li class="list-item-clean">
+                  <span class="list-item-title">教育科技系統架構師 / AI 研發主持</span>
+                  <span class="list-item-meta">全域評測引擎 · 多代理人教學系統設計</span>
+                  <span class="list-item-desc">主導 GAEC 國際英語檢定平台與 VELS 品格素養模擬系統之核心研發。</span>
+                </li>
+                <li class="list-item-clean">
+                  <span class="list-item-title">跨領域課程總監與 STEM 研習導師</span>
+                  <span class="list-item-meta">前瞻數理課程 · 教學鷹架模組研發</span>
+                  <span class="list-item-desc">為多所學校及教育機構導入 AI 賦能的探究式學習模組。</span>
+                </li>
+                <li class="list-item-clean">
+                  <span class="list-item-title">跨學科學術研究顧問</span>
+                  <span class="list-item-meta">人機協同學習 · 倫理規範評審</span>
+                  <span class="list-item-desc">融合田野調查質性方法與大語言模型對話分析，發表前瞻教育科技洞察。</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="card-meta-quiet">Industry & Academic Leadership</span>
+              <a href="./experience.html#career" class="card-link">歷年經歷時間軸 <span>→</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Spotlight -->
+    <section class="section-block">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">核心專案展示 (Featured AI Projects)</h2>
+            <p class="section-desc">三大代表性教育科技系統，實踐跨領域從人類思辨到尖端 AI 的整合。</p>
+          </div>
+          <a href="./portfolio.html" class="btn-secondary">瀏覽全部專案與架構 →</a>
+        </div>
+
+        <div class="projects-showcase-grid">
+          <!-- GAEC -->
+          <div class="project-card">
+            <div class="project-card-visual">
+              <svg viewBox="0 0 400 180" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="gaecGlow" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#818cf8" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="200" cy="90" r="60" fill="none" stroke="url(#gaecGlow)" stroke-width="2" stroke-dasharray="6 4"/>
+                <circle cx="200" cy="90" r="38" fill="rgba(56, 189, 248, 0.12)" stroke="#38bdf8" stroke-width="1.5"/>
+                <text x="200" y="96" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle" font-family="system-ui">GAEC</text>
+                <!-- Orbiting nodes -->
+                <circle cx="140" cy="90" r="7" fill="#38bdf8"/>
+                <circle cx="260" cy="90" r="7" fill="#818cf8"/>
+                <circle cx="200" cy="30" r="6" fill="#c084fc"/>
+                <text x="200" y="150" fill="#94a3b8" font-size="11" text-anchor="middle">CEFR Automated Assessment Engine</text>
+              </svg>
+            </div>
+            <div class="project-card-content">
+              <div class="project-meta-line">
+                <span>專案 01</span>
+                <span>·</span>
+                <span>語言評測與多模態 AI</span>
+              </div>
+              <h3 class="project-card-title">GAEC 全球 AI 英語能力檢定系統</h3>
+              <p class="project-card-desc">
+                對標國際 CEFR 評量標準，整合語音聲學特徵分析、口語語流流暢度計算與文本論證邏輯分析，提供高可靠度自動評分與診斷式修訂指引。
+              </p>
+              <div class="project-specs">
+                <span class="spec-item">CEFR B1-C2 標定</span>
+                <span class="spec-item">多模態語音評測</span>
+                <span class="spec-item">即時診斷報告</span>
+              </div>
+              <a href="./gaec.html" class="btn-primary">
+                <span>檢視 GAEC 詳情與模擬器</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- VELS -->
+          <div class="project-card">
+            <div class="project-card-visual">
+              <svg viewBox="0 0 400 180" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="velsGlow" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#818cf8" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+                <polygon points="200,35 255,135 145,135" fill="rgba(192, 132, 252, 0.1)" stroke="url(#velsGlow)" stroke-width="2"/>
+                <circle cx="200" cy="70" r="10" fill="#c084fc"/>
+                <circle cx="170" cy="120" r="8" fill="#818cf8"/>
+                <circle cx="230" cy="120" r="8" fill="#38bdf8"/>
+                <text x="200" y="98" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">VELS</text>
+                <text x="200" y="160" fill="#94a3b8" font-size="11" text-anchor="middle">Virtue & SEL Simulation Matrix</text>
+              </svg>
+            </div>
+            <div class="project-card-content">
+              <div class="project-meta-line">
+                <span>專案 02</span>
+                <span>·</span>
+                <span>品格素養與情境情境模擬</span>
+              </div>
+              <h3 class="project-card-title">VELS 品格教育學習與決策系統</h3>
+              <p class="project-card-desc">
+                融合理論人類學的道德哲學觀點與 Kohlberg 道德發展階段，以情境模擬分支與蘇格拉底反思日誌，培養學習者批判思辨與社會情緒能力。
+              </p>
+              <div class="project-specs">
+                <span class="spec-item">道德難題分支引擎</span>
+                <span class="spec-item">SEL 情緒指標監測</span>
+                <span class="spec-item">動態反思鷹架</span>
+              </div>
+              <a href="./vels.html" class="btn-primary">
+                <span>檢視 VELS 詳情與模擬器</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- AI Agents -->
+          <div class="project-card">
+            <div class="project-card-visual">
+              <svg viewBox="0 0 400 180" width="100%" height="100%">
+                <defs>
+                  <linearGradient id="agentGlow" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#34d399" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+                <rect x="140" y="45" width="120" height="90" rx="10" fill="rgba(52, 211, 153, 0.08)" stroke="url(#agentGlow)" stroke-width="2"/>
+                <line x1="140" y1="90" x2="90" y2="70" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 2"/>
+                <line x1="260" y1="90" x2="310" y2="70" stroke="#818cf8" stroke-width="2" stroke-dasharray="4 2"/>
+                <line x1="200" y1="135" x2="200" y2="160" stroke="#c084fc" stroke-width="2"/>
+                <circle cx="90" cy="70" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+                <circle cx="310" cy="70" r="14" fill="#1e293b" stroke="#818cf8" stroke-width="1.5"/>
+                <circle cx="200" cy="160" r="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+                <text x="200" y="85" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">AGENTS</text>
+                <text x="200" y="105" fill="#34d399" font-size="10" font-weight="600" text-anchor="middle">Multi-Agent Swarm</text>
+              </svg>
+            </div>
+            <div class="project-card-content">
+              <div class="project-meta-line">
+                <span>專案 03</span>
+                <span>·</span>
+                <span>協同智慧與教育代理人生態</span>
+              </div>
+              <h3 class="project-card-title">Educational AI Agent Ecosystem</h3>
+              <p class="project-card-desc">
+                架構專門分工的 AI 代理人網路（包含蘇格拉底引導者、認知診斷師、課程規畫者與倫理守護者），突破傳統單一提示詞問答的教學局限。
+              </p>
+              <div class="project-specs">
+                <span class="spec-item">分工代理人協商</span>
+                <span class="spec-item">無死角迷思診斷</span>
+                <span class="spec-item">安全校園護衛</span>
+              </div>
+              <a href="./agents.html" class="btn-primary">
+                <span>檢視 AI 代理人生態與演示</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card-box">
+          <div class="contact-info-side">
+            <h2 class="contact-title">學術交流與專案合作</h2>
+            <p class="contact-desc">
+              歡迎海內外大專院校、研究機構、中小學與教育科技創新團隊共同探討跨領域教育設計、智慧評測引擎或 AI 代理人融入課堂之合作研究。
+            </p>
+            <div style="font-size:13.5px; color:#cbd5e1; display:flex; flex-direction:column; gap:6px;">
+              <div><strong>通訊信箱：</strong>cmhou777@gmail.com</div>
+              <div><strong>研究領域：</strong>AI in Education (AIED) · Learning Sciences · Anthropological Pedagogy</div>
+            </div>
+          </div>
+          <div class="contact-actions-side">
+            <button class="copy-email-btn" data-email="cmhou777@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>複製電子郵件</span>
+            </button>
+            <a href="mailto:cmhou777@gmail.com" class="btn-primary" style="justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>直接寄送信件</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          © 2026 C.M. HOU 侯敬群 · Cross-Disciplinary Academic Portfolio · All Rights Reserved
+        </div>
+        <div class="footer-nav">
+          <a href="./index.html">Home</a>
+          <a href="./experience.html">Experience</a>
+          <a href="./portfolio.html">Portfolio</a>
+          <a href="./gaec.html">GAEC</a>
+          <a href="./vels.html">VELS</a>
+          <a href="./agents.html">AI Agents</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification element -->
+  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite"></div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

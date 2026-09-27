@@ -1,10 +1,8 @@
-import tailwindcss from '@tailwindcss/vite';
-import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 
-// Plugin to auto-generate 404.html for GitHub Pages SPA routing
+// Plugin to auto-generate 404.html for GitHub Pages fallback
 function githubPagesPlugin() {
   return {
     name: 'github-pages-plugin',
@@ -22,17 +20,26 @@ function githubPagesPlugin() {
 export default defineConfig(() => {
   return {
     base: './',
-    plugins: [react(), tailwindcss(), githubPagesPlugin()],
+    plugins: [githubPagesPlugin()],
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          experience: path.resolve(__dirname, 'experience.html'),
+          portfolio: path.resolve(__dirname, 'portfolio.html'),
+          gaec: path.resolve(__dirname, 'gaec.html'),
+          vels: path.resolve(__dirname, 'vels.html'),
+          agents: path.resolve(__dirname, 'agents.html'),
+        },
+      },
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
