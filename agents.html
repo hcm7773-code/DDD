@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educational AI Agent 生態系統 | Educational AI Agent Ecosystem | C.M. HOU</title>
-  <meta name="description" content="專責角色協同的多代理人教育生態系統：蘇格拉底引導、認知迷思診斷、文化情境轉譯與安全校園守護">
-  <link rel="stylesheet" href="./css/style.css">
+  <title>Educational AI Agent Ecosystem | Cmei C.</title>
+  <meta name="description" content="Multi-agent architecture for AI-driven education and learning: Socratic tutors, cognitive diagnosticians, and safety guardians.">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  <!-- Top Navigation Bar -->
+  <!-- Top Header Navigation -->
   <header class="site-header">
     <div class="container">
-      <div class="top-bar">
-        <a href="./index.html" class="brand-mark" aria-label="返回首頁">
-          <div class="brand-icon-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-          </div>
+      <div class="header-inner">
+        <a href="./index.html" class="brand-zone" aria-label="Go to Home">
+          <div class="brand-avatar">CC</div>
           <div class="brand-text">
-            <span class="brand-name">C.M. HOU 侯敬群</span>
-            <span class="brand-sub">AI & EdTech Portfolio</span>
+            <span class="brand-name" data-profile="name">Cmei C.</span>
+            <span class="brand-role">AI & EdTech Portfolio</span>
           </div>
         </a>
 
-        <nav class="nav-links" aria-label="主要導覽">
-          <a href="./index.html" class="nav-link">Home</a>
-          <a href="./experience.html" class="nav-link">Experience</a>
-          <a href="./portfolio.html" class="nav-link">Portfolio</a>
-          <a href="./gaec.html" class="nav-link">GAEC</a>
-          <a href="./vels.html" class="nav-link">VELS</a>
-          <a href="./agents.html" class="nav-link active">AI Agents</a>
-          <a href="#contact" class="nav-link">Contact</a>
+        <!-- Main Nav (3 Primary Navigation Items) -->
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="./index.html" class="nav-item">Personal Profile</a>
+          <a href="./experience.html" class="nav-item">Experience & Education</a>
+          <a href="./portfolio.html" class="nav-item active">Skills & Portfolio</a>
         </nav>
 
-        <div class="header-actions">
-          <a href="./portfolio.html" class="btn-secondary">
-            <span>返回作品集</span>
-          </a>
-          <button class="mobile-toggle" aria-label="切換選單" aria-expanded="false">
+        <div class="header-action-zone">
+          <div class="controls-group">
+            <button class="theme-toggle-btn toggle-btn" aria-label="Toggle Theme" title="燈光模式 / Toggle Light & Dark Mode">
+              <span class="toggle-icon">☀️</span>
+              <span class="toggle-label">Light Mode</span>
+            </button>
+          </div>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -51,292 +47,136 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="mobile-drawer" role="dialog" aria-modal="true">
-    <a href="./index.html" class="mobile-nav-link">Home 首頁</a>
-    <a href="./experience.html" class="mobile-nav-link">Experience 經歷與學歷</a>
-    <a href="./portfolio.html" class="mobile-nav-link">Portfolio 技能與專案</a>
-    <a href="./gaec.html" class="mobile-nav-link">GAEC 英語檢定系統</a>
-    <a href="./vels.html" class="mobile-nav-link">VELS 品格學習系統</a>
-    <a href="./agents.html" class="mobile-nav-link active">AI Agents 多代理人生態</a>
-    <a href="#contact" class="mobile-nav-link">Contact 聯絡交流</a>
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <div style="display: flex; gap: 10px; margin-bottom: 8px;">
+      <button class="theme-toggle-btn toggle-btn" style="flex: 1; justify-content: center;" aria-label="Toggle Theme" title="燈光模式 / Toggle Light & Dark Mode">
+        <span class="toggle-icon">☀️</span>
+        <span class="toggle-label">Light Mode</span>
+      </button>
+    </div>
+    <a href="./index.html" class="mobile-link">Personal Profile</a>
+    <a href="./experience.html" class="mobile-link">Experience & Education</a>
+    <a href="./portfolio.html" class="mobile-link active">Skills & Portfolio</a>
   </div>
 
-  <main>
-    <!-- Subpage Hero -->
-    <div class="subpage-hero">
-      <div class="container">
-        <div class="subpage-breadcrumb">
-          <a href="./index.html">首頁</a>
-          <span>/</span>
-          <a href="./portfolio.html">作品集</a>
-          <span>/</span>
-          <span style="color:#fff;">Educational AI Agents 專案介紹</span>
+  <main class="container" style="padding-top: 36px;">
+    <div class="project-single-wrapper">
+      <div class="project-detail-box">
+        <div style="font-size: 12px; font-family: var(--font-mono); color: var(--accent-emerald); font-weight: 700; margin-bottom: 8px;">
+          PROJECT 03 · CASE STUDY
         </div>
-        <div class="hero-kicker" style="margin-bottom:8px;">
-          <span class="hero-kicker-dot"></span>
-          <span>Project Case Study 03 · Multi-Agent Pedagogical Orchestration</span>
-        </div>
-        <h1 class="subpage-title">Educational AI Agent 生態系統</h1>
-        <p class="subpage-desc">
-          Educational AI Agent Ecosystem · 突破傳統單一提示詞問答的教學局限，構建專責角色分工協商的智慧教學代理人叢集。
+
+        <h1 style="font-size: clamp(26px, 4vw, 36px); font-weight: 800; color: #fff; margin-bottom: 8px;">
+          Educational AI Agent Ecosystem
+        </h1>
+        <p style="font-size: 16px; color: var(--accent-cyan); font-weight: 600; margin-bottom: 24px;">
+          Multi-Agent Architecture for Collaborative, Autonomous Pedagogical Scaffolding
         </p>
+
+        <!-- Summary Banner -->
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 22px; margin-bottom: 28px;">
+          <h2 style="font-size: 17px; color: #fff; margin-bottom: 8px;">Executive Summary</h2>
+          <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.65;">
+            Single-prompt chatbots fail in educational settings because they prematurely reveal final answers, lack longitudinal tracking of cognitive misconceptions, and cannot balance empathy with academic rigor. The Educational AI Agent Ecosystem introduces a specialized multi-agent swarm architecture where discrete agents—Socratic Tutors, Cognitive Diagnosticians, and Ethical Guardians—collaborate in real time across a shared cognitive blackboard.
+          </p>
+        </div>
+
+        <!-- Key Pillars Grid -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 30px;">
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); padding: 18px; border-radius: var(--radius-sm);">
+            <div style="font-size: 12px; color: var(--accent-cyan); font-weight: 700; margin-bottom: 4px;">AGENT ROLE 01</div>
+            <h3 style="font-size: 15px; color: #fff; margin-bottom: 6px;">Socratic Tutor Agent</h3>
+            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+              Forbidden from outputting turnkey solutions; asks step-by-step counter-questions to induce conceptual self-discovery.
+            </p>
+          </div>
+
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); padding: 18px; border-radius: var(--radius-sm);">
+            <div style="font-size: 12px; color: var(--accent-indigo); font-weight: 700; margin-bottom: 4px;">AGENT ROLE 02</div>
+            <h3 style="font-size: 15px; color: #fff; margin-bottom: 6px;">Cognitive Diagnostician</h3>
+            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+              Identifies underlying student misconceptions in STEM (e.g., fraction division misconceptions, sign errors, force balance fallacies).
+            </p>
+          </div>
+
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); padding: 18px; border-radius: var(--radius-sm);">
+            <div style="font-size: 12px; color: var(--accent-purple); font-weight: 700; margin-bottom: 4px;">AGENT ROLE 03</div>
+            <h3 style="font-size: 15px; color: #fff; margin-bottom: 6px;">Cultural Contextualizer</h3>
+            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+              Translates abstract concepts into relatable cultural narratives and everyday real-world examples, enhancing learning engagement.
+            </p>
+          </div>
+
+          <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); padding: 18px; border-radius: var(--radius-sm);">
+            <div style="font-size: 12px; color: var(--accent-emerald); font-weight: 700; margin-bottom: 4px;">AGENT ROLE 04</div>
+            <h3 style="font-size: 15px; color: #fff; margin-bottom: 6px;">Safety & Ethics Guardian</h3>
+            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
+              Maintains strict classroom boundaries, detects learner anxiety or distress, and flags alerts for human educator intervention.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Multi-Agent Demo -->
+        <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(20, 27, 45, 0.95)); border: 1px solid var(--border-accent); border-radius: var(--radius-md); padding: 24px; margin-bottom: 30px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <span style="font-size: 15px; font-weight: 700; color: #fff;">Multi-Agent Collaborative Orchestration Sandbox</span>
+            <span style="font-size: 11px; font-family: var(--font-mono); color: var(--accent-emerald);">MAS Engine</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 16px;">
+            Click below to trigger a live multi-agent dialogue demonstrating how the Diagnostician, Socratic Tutor, and Formative Evaluator negotiate scaffolding:
+          </p>
+
+          <button id="agentRunBtn" class="btn btn-primary btn-full" style="margin-bottom: 14px;">
+            <span>Simulate Multi-Agent Pedagogical Workflow</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <div id="agentLogBox" style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-subtle); padding: 14px; border-radius: var(--radius-sm); min-height: 120px;">
+            <div style="margin-bottom:8px; border-left:3px solid #38bdf8; padding-left:10px;">
+              <span style="color:#38bdf8; font-weight:700; font-size:11.5px;">[Cognitive Diagnostician Agent]</span><br>
+              <span style="color:var(--text-light); font-size:12.5px;">Detected learner misconception in fraction division: assumes dividing always yields smaller quotients.</span>
+            </div>
+            <div style="margin-bottom:8px; border-left:3px solid #a855f7; padding-left:10px;">
+              <span style="color:#a855f7; font-weight:700; font-size:11.5px;">[Socratic Tutor Agent]</span><br>
+              <span style="color:var(--text-light); font-size:12.5px;">"If you have 2 whole pizzas and share half (1/2) a pizza per friend, how many friends can eat?"</span>
+            </div>
+            <div style="border-left:3px solid #34d399; padding-left:10px;">
+              <span style="color:#34d399; font-weight:700; font-size:11.5px;">[Formative Evaluator Agent]</span><br>
+              <span style="color:var(--text-light); font-size:12.5px;">Student responds: "4 friends!" — Conceptual shift verified via geometric scaffolding.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+          <a href="./vels.html" class="btn btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+            <span>Previous: VELS</span>
+          </a>
+          <a href="./portfolio.html" class="btn btn-primary">
+            <span>Return to Portfolio</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+
       </div>
     </div>
-
-    <!-- Deep-Dive Content Layout -->
-    <div class="container">
-      <div class="project-deepdive-grid">
-        <!-- Main Column -->
-        <div class="deepdive-main">
-          <!-- Overview Card -->
-          <div class="feature-block">
-            <h2 class="feature-block-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-              </svg>
-              架構哲學與教育變革 (Architectural Paradigm Shift)
-            </h2>
-            <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:16px;">
-              當前多數課堂中引入的 AI 工具多為「通用問答聊天機器人（Single Chatbot）」，此類模式存在致命缺陷：<strong>容易直接給出答案剝奪學生深思機會、缺乏對數理迷思概念之專門追蹤、且無法感知學習者所處的社會文化脈絡。</strong>
-            </p>
-            <p style="color:var(--text-secondary); line-height:1.7;">
-              <strong>Educational AI Agent Ecosystem</strong> 引進分散式多代理人系統（Multi-Agent Systems, MAS）與建構主義教育理論。將「教學」視為多重角色的協調交織，讓個別專門訓練的代理人在背景即時通信與辯論，共同為學習者提供最符應當下認知發展區（ZPD）的最適鷹架。
-            </p>
-          </div>
-
-          <!-- Multi-Agent Orchestration Diagram (SVG) -->
-          <div class="feature-block">
-            <h2 class="feature-block-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
-              </svg>
-              多代理人協作拓撲圖 (Agent Topology & Workflow)
-            </h2>
-            <div style="background:rgba(0,0,0,0.4); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:20px; overflow-x:auto;">
-              <svg viewBox="0 0 740 240" width="100%" height="auto" style="min-width:620px;">
-                <!-- Center Core Hub -->
-                <circle cx="370" cy="120" r="45" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
-                <text x="370" y="116" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">Central Blackboard</text>
-                <text x="370" y="132" fill="#38bdf8" font-size="10.5" text-anchor="middle">共享認知黑板</text>
-
-                <!-- Agent 1: Socratic -->
-                <rect x="20" y="20" width="155" height="70" rx="8" fill="#131b2e" stroke="#38bdf8" stroke-width="1.5"/>
-                <text x="97" y="44" fill="#38bdf8" font-size="12" font-weight="700" text-anchor="middle">Socratic Tutor</text>
-                <text x="97" y="66" fill="#cbd5e1" font-size="11" text-anchor="middle">蘇格拉底啟發導師</text>
-                <line x1="175" y1="55" x2="330" y2="105" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
-
-                <!-- Agent 2: Diagnostician -->
-                <rect x="20" y="145" width="155" height="70" rx="8" fill="#131b2e" stroke="#818cf8" stroke-width="1.5"/>
-                <text x="97" y="169" fill="#818cf8" font-size="12" font-weight="700" text-anchor="middle">Cognitive Diagnostician</text>
-                <text x="97" y="191" fill="#cbd5e1" font-size="11" text-anchor="middle">數理迷思認知診斷師</text>
-                <line x1="175" y1="180" x2="330" y2="135" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3 2"/>
-
-                <!-- Agent 3: Anthropological Context -->
-                <rect x="565" y="20" width="155" height="70" rx="8" fill="#131b2e" stroke="#c084fc" stroke-width="1.5"/>
-                <text x="642" y="44" fill="#c084fc" font-size="12" font-weight="700" text-anchor="middle">Cultural Contextualizer</text>
-                <text x="642" y="66" fill="#cbd5e1" font-size="11" text-anchor="middle">人類學文化轉譯者</text>
-                <line x1="565" y1="55" x2="410" y2="105" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="3 2"/>
-
-                <!-- Agent 4: Safety Guardian -->
-                <rect x="565" y="145" width="155" height="70" rx="8" fill="#131b2e" stroke="#34d399" stroke-width="1.5"/>
-                <text x="642" y="169" fill="#34d399" font-size="12" font-weight="700" text-anchor="middle">Safety & Ethics Guardian</text>
-                <text x="642" y="191" fill="#cbd5e1" font-size="11" text-anchor="middle">校園倫理安全護衛者</text>
-                <line x1="565" y1="180" x2="410" y2="135" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3 2"/>
-
-                <!-- Student & Teacher -->
-                <rect x="300" y="195" width="140" height="35" rx="6" fill="#0f172a" stroke="#ffffff" stroke-width="1"/>
-                <text x="370" y="217" fill="#fff" font-size="11" font-weight="600" text-anchor="middle">真人教師與學生主體</text>
-                <line x1="370" y1="165" x2="370" y2="195" stroke="#ffffff" stroke-width="1.5"/>
-              </svg>
-            </div>
-          </div>
-
-          <!-- The 5 Core Specialized Agents -->
-          <div class="feature-block">
-            <h2 class="feature-block-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
-              </svg>
-              專責代理人群角色細部設計 (Agent Roles & Personas)
-            </h2>
-            <div style="display:flex; flex-direction:column; gap:14px;">
-              <div style="background:rgba(255,255,255,0.03); padding:16px; border-radius:8px; border:1px solid var(--border-subtle); display:grid; grid-template-columns:180px 1fr; gap:16px;">
-                <div style="color:#38bdf8; font-weight:700; font-size:13.5px;">蘇格拉底啟發導師<br><span style="font-size:11px; color:#94a3b8; font-weight:normal;">Socratic Tutor Agent</span></div>
-                <div style="color:var(--text-secondary); font-size:12.5px; line-height:1.6;">
-                  嚴格限制不得直接公布解題答案或代寫作業；專門依據學習者之輸入構造階梯式反向提問，誘導其自主發現矛盾。
-                </div>
-              </div>
-
-              <div style="background:rgba(255,255,255,0.03); padding:16px; border-radius:8px; border:1px solid var(--border-subtle); display:grid; grid-template-columns:180px 1fr; gap:16px;">
-                <div style="color:#818cf8; font-weight:700; font-size:13.5px;">數理迷思認知診斷師<br><span style="font-size:11px; color:#94a3b8; font-weight:normal;">Cognitive Diagnostician</span></div>
-                <div style="color:var(--text-secondary); font-size:12.5px; line-height:1.6;">
-                  分析學生的錯誤答題模式，判定屬於計算疏忽、符號轉譯錯誤、抑或是幾何直覺謬誤，並在共享黑板標註迷思節點。
-                </div>
-              </div>
-
-              <div style="background:rgba(255,255,255,0.03); padding:16px; border-radius:8px; border:1px solid var(--border-subtle); display:grid; grid-template-columns:180px 1fr; gap:16px;">
-                <div style="color:#c084fc; font-weight:700; font-size:13.5px;">人類學文化轉譯者<br><span style="font-size:11px; color:#94a3b8; font-weight:normal;">Cultural Contextualizer</span></div>
-                <div style="color:var(--text-secondary); font-size:12.5px; line-height:1.6;">
-                  將枯燥抽象的數理公式轉譯為學習者日常文化中熟悉的田野情境（例如將座標系轉為部落導航概念），建立真實意義感。
-                </div>
-              </div>
-
-              <div style="background:rgba(255,255,255,0.03); padding:16px; border-radius:8px; border:1px solid var(--border-subtle); display:grid; grid-template-columns:180px 1fr; gap:16px;">
-                <div style="color:#34d399; font-weight:700; font-size:13.5px;">校園倫理安全護衛者<br><span style="font-size:11px; color:#94a3b8; font-weight:normal;">Safety & Ethics Guardian</span></div>
-                <div style="color:var(--text-secondary); font-size:12.5px; line-height:1.6;">
-                  全時程過濾潛在不當言論、心理焦慮信號與偏見歧視，即時轉介真人輔導教師並重置對話安全邊界。
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar / Interactive Widget -->
-        <div class="deepdive-sidebar">
-          <!-- Interactive Widget -->
-          <div class="interactive-widget-box">
-            <div class="widget-header">
-              <span class="widget-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                </svg>
-                多代理人協作即時模擬器
-              </span>
-              <span class="widget-badge">Interactive MAS Simulator</span>
-            </div>
-            <p style="font-size:12.5px; color:var(--text-secondary); margin-bottom:14px;">
-              選擇學習探究主題，觸發背後多代理人如何分工對話、交換認知狀態並達成教學共識：
-            </p>
-
-            <div style="margin-bottom:16px;">
-              <label style="font-size:12px; color:var(--text-secondary); display:block; margin-bottom:6px;">選擇模擬情境：</label>
-              <select id="agentTopicSelect" class="widget-select">
-                <option value="math_fractions">案例 A：國小數學「分數除法與倒數」迷思概念引導</option>
-                <option value="cultural_env">案例 B：跨學科「部落生態知識與現代水質科學」探究</option>
-              </select>
-            </div>
-
-            <button id="agentSimulateBtn" class="btn-primary" style="width:100%; justify-content:center; margin-bottom:16px;">
-              <span>啟動多代理人協同工作流</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
-
-            <!-- Output Log Area -->
-            <div id="agentSimulationLog" class="widget-output-area" style="min-height:180px;">
-              <div style="margin-bottom:8px; border-left:3px solid #38bdf8; padding-left:10px;">
-                <span style="color:#38bdf8; font-weight:700; font-size:12px;">[認知診斷代理人 · Diagnostician]</span><br>
-                <span style="color:#e2e8f0; font-size:13px;">檢測到學習者在「分數除法」混淆倒數概念，直覺認為除法結果必然變小。</span>
-              </div>
-              <div style="margin-bottom:8px; border-left:3px solid #a855f7; padding-left:10px;">
-                <span style="color:#a855f7; font-weight:700; font-size:12px;">[蘇格拉底引導代理人 · Socratic Tutor]</span><br>
-                <span style="color:#e2e8f0; font-size:13px;">「如果我們有 2 塊披薩，每個人分半塊（1/2 塊），總共可以分給幾個人吃呢？」</span>
-              </div>
-              <div style="margin-bottom:8px; border-left:3px solid #34d399; padding-left:10px;">
-                <span style="color:#34d399; font-weight:700; font-size:12px;">[形成性評量代理人 · Evaluator]</span><br>
-                <span style="color:#e2e8f0; font-size:13px;">學習者回應：「4 個人！」——概念轉變確認，幾何視覺化支架已生效。</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Quick Specs -->
-          <div class="feature-block">
-            <h3 style="font-size:15px; font-weight:700; color:#fff; margin-bottom:14px;">系統協作規格 (Specifications)</h3>
-            <ul style="list-style:none; display:flex; flex-direction:column; gap:10px; font-size:13px; color:var(--text-secondary);">
-              <li style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border-subtle); padding-bottom:6px;">
-                <span>代理人數量：</span>
-                <span style="color:#fff; font-weight:600;">5 大專責協同角色</span>
-              </li>
-              <li style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border-subtle); padding-bottom:6px;">
-                <span>通訊機制：</span>
-                <span style="color:#fff; font-weight:600;">Blackboard Shared Memory</span>
-              </li>
-              <li style="display:flex; justify-content:space-between; border-bottom:1px solid var(--border-subtle); padding-bottom:6px;">
-                <span>教學設計：</span>
-                <span style="color:#fff; font-weight:600;">ZPD 認知鷹架與建構論</span>
-              </li>
-              <li style="display:flex; justify-content:space-between;">
-                <span>研發主持：</span>
-                <span style="color:#34d399; font-weight:600;">C.M. HOU 侯敬群</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Interlink to other projects -->
-          <div class="feature-block">
-            <h3 style="font-size:15px; font-weight:700; color:#fff; margin-bottom:12px;">探索其他代表專案</h3>
-            <div style="display:flex; flex-direction:column; gap:10px;">
-              <a href="./gaec.html" class="card-link" style="font-size:13.5px;">
-                <span>→ 前往 GAEC 語言能力檢定系統</span>
-              </a>
-              <a href="./vels.html" class="card-link" style="font-size:13.5px;">
-                <span>→ 前往 VELS 品格教育學習系統</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact & Collaboration Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div class="contact-card-box">
-          <div class="contact-info-side">
-            <h2 class="contact-title">探討多代理人教育研究合作</h2>
-            <p class="contact-desc">
-              如果您有意在中小學或高等教育場域推動 Agentic AI 協同教學實驗，歡迎與我們取得聯繫。
-            </p>
-            <div style="font-size:13.5px; color:#cbd5e1;">
-              <strong>聯絡信箱：</strong>cmhou777@gmail.com
-            </div>
-          </div>
-          <div class="contact-actions-side">
-            <button class="copy-email-btn" data-email="cmhou777@gmail.com">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span>複製電子郵件</span>
-            </button>
-            <a href="./portfolio.html" class="btn-primary" style="justify-content:center;">
-              <span>返回作品集總覽</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Site Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer-bar">
     <div class="container">
-      <div class="footer-inner">
-        <div>
-          © 2026 C.M. HOU 侯敬群 · Cross-Disciplinary Academic Portfolio · All Rights Reserved
-        </div>
-        <div class="footer-nav">
-          <a href="./index.html">Home</a>
-          <a href="./experience.html">Experience</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./gaec.html">GAEC</a>
-          <a href="./vels.html">VELS</a>
-          <a href="./agents.html">AI Agents</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
+      © 2026 Cmei C. · 3-Page Personal Resume Website MVP · All Rights Reserved
     </div>
   </footer>
 
-  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite"></div>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
